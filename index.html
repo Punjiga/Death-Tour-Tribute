@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Death Tribute</title>
+    <link rel="shortcut icon" href="assets/death/death logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="assets/death/death logo.png" alt="logo principal banda death"></a>
+            <a href="#" id="openMenu" onclick="abrirMenu()"><i class="fa fa-hamburger"></i></a>
+            <a href="#" id="closeMenu" onclick="cerrarMenu()"><i class="fa fa-close"></i></a>
+            <ul id="navOptions">
+                <li><span>Home</span></li>
+                <li>How It Work</li>
+                <li>Rental Details</li>
+                <li>Why Choose Us</li>
+                <li>Testimonal</li>
+                <li class="registerButton">Register</li>
+                <li class="loginButton">Log in</li>
+            </ul>
+        </nav>
+        <div class="containerDivs">
+            <div class="firstDiv">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <h1>Tribute to Death Tour 2025</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolor quo enim commodi deleniti? Vel
+                    iure vero ad facere adipisci commodi est omnis quam quaerat, dolorem quasi.</p>
+                <a href="#" class="buttonCompra">Comprar</a>
+            </div>
+            <div class="secondDiv"></div>
+        </div>
+    </header>
+    <main>
+        <section class="sectionDates">
+            <div class="containerArticles">
+                <article>
+                    <h2>Fechas</h2>
+                    <p>Fecha1/Fecha2</p>
+                </article>
+                <article class="centerArticle">
+                    <h2>Horas</h2>
+                    <p>08:00p.m</p>
+                </article>
+                <article>
+                    <h2>Tour</h2>
+                    <p>Nombre del tour</p>
+                </article>
+            </div>
+        </section>
+        <section class="sectionPasos">
+            <h2>
+                Pasos para disfrutar del concierto
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Corrupti ratione, ad eaque possimus alias
+                consequatur ullam.</p>
+            <div class="containerPasos">
+                <article>
+                    <i class="fa fa-location-dot"></i>
+                    <h3>Choose Location</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem culpa similique odit
+                        obcaecati aperiam?</p>
+                </article>
+                <article>
+                    <i class="fa fa-calendar"></i>
+                    <h3>Pick-up Date</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem culpa similique odit
+                        obcaecati aperiam?</p>
+                </article>
+                <article>
+                    <i class="fa fa-car"></i>
+                    <h3>Book you car</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem culpa similique odit
+                        obcaecati aperiam?</p>
+                </article>
+            </div>
+        </section>
+        <section class="sectionInvitadosFinal">
+            <h2>
+                Bandas Invitadas
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Quaerat amet quo inventore optio vero
+                numquam minus!</p>
+            <!-- Div con las opciones  -->
+            <div class="bandsOptions">
+                <button class="tablinks" onclick="openCity(event, 'banda1')" id="defaultOpen">Banda 1</button>
+                <button class="tablinks" onclick="openCity(event, 'banda2')">Banda 2</button>
+                <button class="tablinks" onclick="openCity(event, 'banda3')">Banda 3</button>
+                <button class="tablinks" onclick="openCity(event, 'banda4')">Banda 4</button>
+            </div>
+            <!-- Contenido que va a tener cada uno como tal -->
+            <article id="banda1" class="tabcontent">
+                <h3>Cannibal corpse</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="membersBand">
+                    <img src="./assets/Invitados/Erik Rutan CANNIBAL CORPSE.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Alex Webster CANNIBAL CORPSE.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Paul Mazurkiewicz CANNIBAL CORPSE.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/George Corpsegrinder CANNIBAL CORPSE.jpg" alt="miembro de una de las bandas invitadas">
+                </div>
+            </article>
+            <article id="banda2" class="tabcontent">
+                <h3>Morbid Angel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="membersBand">
+                    <img src="./assets/Invitados/Steve Tucker MORBID ANGEL.png" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Charlie Koryn MORBID ANGEL.png" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Dan Vadim Von MORBID ANGEL.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Trey Azagthoth MORBID ANGEL.jpg" alt="miembro de una de las bandas invitadas">
+                </div>
+            </article>
+            <article id="banda3" class="tabcontent">
+                <h3>Obituary</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="membersBand">
+                    <img src="./assets/Invitados/John Tardy OBITUARY.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Donald Tardy OBITUARY.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Trevor Peres OBITUARY.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Kenny Andrews OBITUARY.jpg" alt="miembro de una de las bandas invitadas">
+                </div>
+            </article>
+            <article id="banda4" class="tabcontent">
+                <h3>Deicide</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="membersBand">
+                    <img src="./assets/Invitados/Glen Benton DEICIDE.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Steve Asheim DEICIDE.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Kevin Quirion DEICIDE.jpg" alt="miembro de una de las bandas invitadas">
+                    <img src="./assets/Invitados/Taylor Nordberg DEICIDE.jpg" alt="miembro de una de las bandas invitadas">
+                </div>
+            </article>
+        </section>
+        <section class="sectionBandaPrincipal">
+            <h2>
+                Conoce más sobre los miembros death
+            </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Saepe quod sed quis dicta maxime fugiat
+                illum!</p>
+            <div class="containerCols">
+                <article class="col1"></article>
+                <article class="col2">
+                    <div class="info">
+                        <i class="fa fa-phone"></i>
+                        <h3>Customer Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolore corrupti.</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa fa-tag"></i>
+                        <h3>Best Price Guarantted</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolore corrupti.</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa fa-location-dot"></i>
+                        <h3>Many Location</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolore corrupti.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="sectionBandaPrincipal2">
+            <img src="./assets/death//Max Phelps voz y guitarra.jpg"
+                alt="fotografia  miembro de la banda principal death">
+            <img src="./assets/death/Gene Hoglan bateria.jpg" alt="fotografia  miembro de la banda principal death">
+        </section>
+    </main>
+    <footer>
+        <div class="col1Footer">
+            <a href="#"><img src="./assets/death/death logo.png" alt="logo principal banda death"></a>
+            <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Incidunt tempora quasi ipsam.</p>
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="colOthersFooter">
+            <Span>About</Span>
+            <ul>
+                <li>How It Works</li>
+                <li>Features</li>
+                <li>Partnership</li>
+                <li>Business</li>
+            </ul>
+        </div>
+        <div class="colOthersFooter">
+            <Span>Comunnity</Span>
+            <ul>
+                <li>Events</li>
+                <li>Features</li>
+                <li>Partnership</li>
+                <li>Business</li>
+            </ul>
+        </div>
+        <div class="colOthersFooter">
+            <Span>Socials</Span>
+            <ul>
+                <li>How It Works</li>
+                <li>Features</li>
+                <li>Partnership</li>
+                <li>Business</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="derechos">
+        <h4>C Company Nme. All rights reserved</h4>
+        <div>
+            <h4>Privacy & Policy</h4>
+            <h4>Terms & Condition</h4>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'CELTIC';
+    src: url(../assets/fonts/CELTG___.TTF);
+}
+@font-face {
+    font-family: 'BebasNue';
+    src: url(../assets/fonts/BebasNeue-Regular.woff2);
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../assets/fonts/Lato-Regular.ttf);
+}
+:root{
+    /* COLORES */
+    --color-bg-60: #0C0C0C;
+    --color-buttons-details-20: #a40d1e;
+    --color-texts-10: #f2f2f2;
+    /* FUENTES */
+    --font-h1: 'CELTIC';
+    --font-h2-h3-h4-buttons: 'BebasNue';
+    --font-p: 'Lato';
+}
+h1{
+    font-family: var(--font-h1);
+}
+h2,h3,h4,a,button,li{
+    font-family: var(--font-h2-h3-h4-buttons);
+}
+p{
+    font-family: var(--font-p);
+}
+body, ul li, a{
+    color: var(--color-texts-10);
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+/* Header */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(../assets/fondos/concert\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 2px solid #f2f2ff;
+}
+nav ul{
+    display: flex;
+    font-size: 1.7rem;
+    gap: 20px;
+    transition: all ease-in-out .3s;
+}
+nav ul li{
+    text-transform: lowercase !important;
+    padding: .2em 1.2rem;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: #969696;
+    transition: all ease-in-out .4s;
+}
+nav ul li span{
+    color: #969696;
+}
+nav a img, footer a img{
+    width: 8rem;
+}
+.registerButton{
+    border-left: 3px solid #0C0C0C;
+    text-decoration: underline;
+}
+.loginButton{
+    background-color: var(--color-buttons-details-20);
+    border-radius: 10%;
+    text-align: center;
+    transition: all ease-in-out .4s;
+}
+.firstDiv, .secondDiv{
+    width: 50%;
+    height: 100%;
+}
+.firstDiv{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.firstDiv h1, .firstDiv p{
+    width: 70%;
+}
+.secondDiv{
+    background-image: url(../assets/death/death\ all\ members.jpg);
+    background-position: -30px;
+    background-size: cover;
+    border-radius: 10% 0% 0% 0%;
+    width: 70%;
+}
+.containerDivs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 90px;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+.buttonCompra{
+    background-color: var(--color-buttons-details-20);
+    padding: .4rem 2.4rem;
+    font-size: 1.7rem;
+    border-radius: 3%;
+    transition: all ease-in-out .4s;
+}
+.buttonCompra:hover{
+    background-color: #740613;
+    border: 3px solid var(--color-texts-10);
+}
+#openMenu, #closeMenu{
+    font-size: 3rem;
+    display: none;
+}
+/* Section 1 FECHAS */
+.sectionDates{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(68, 68, 68);
+    position: relative;
+}
+.containerArticles{
+    display: flex;
+    padding: 1rem;
+    position: absolute;
+    top: -50px;
+    margin-bottom: 30px;
+    background-color: #b4b4b4;
+    border-radius: 3%;
+}
+.sectionDates article{
+    padding: 1.5rem;
+    color: #0C0C0C;
+}
+.sectionDates article h2{
+    font-size: 1.8rem !important;
+}
+.centerArticle{
+    border-left: 3px solid #0C0C0C;
+    border-right: 3px solid #0C0C0C;
+}
+/* Section 2 PASOS */
+.sectionPasos{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    text-align: center;
+    padding: 4.5rem 0rem;
+    background: linear-gradient(#a40d1e, #0C0C0C);
+    font-size: 1.4rem;
+    align-content: center;
+    gap: 3rem;
+}
+.containerPasos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sectionPasos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 30%;
+}
+.sectionPasos article i{
+    width: fit-content;
+    font-size: 3rem;
+    padding: 30px;
+    border-radius: 30%;
+    background-color: var(--color-buttons-details-20);
+}
+/* Section 3 INVITADOS */
+.sectionInvitadosFinal{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background: linear-gradient(#0c0c0c, #a40d1e);
+    padding: 2.7rem 0rem;
+    text-align: center;
+    gap: 40px;
+}
+.membersBand{
+    width: 100%;
+    height: 100%;
+}
+/* Style the tab */
+.bandsOptions{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+}
+.bandsOptions button{
+    transform: scale(2);
+}
+.tabcontent h3{
+    font-size: 30px;
+}
+.tabcontent {
+    display: none;
+    flex-direction: column;
+    padding: 6px 12px;
+    border-top: none;
+    gap: 30px;
+}
+.tabcontent img{
+    height: 500px ;
+    width: 350px;
+}
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* Section 4 BANDA PRINCIPAL */
+.sectionBandaPrincipal{
+    display: flex;
+    background-image: url(../assets/fondos/bg\ man\ guitar.jpg);
+    background-position: center;
+    background-size: cover;
+    /*  Solo aparece la imagen del integrante con 100 vh??? pero para acomodar solo puedo con auto en height */
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.7rem 0rem;
+    text-align: center;
+    gap: 40px;
+}
+.containerCols{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+.col1, .col2{
+    height: auto;
+}
+.col1{
+    height: 120%;
+    width: 40%;
+    background-image: url(../assets/death/Steve\ Di\ Giorgio\ bajista.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.col2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: start;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+}
+.info i{
+    background-color: #969696;
+    padding: .7rem;
+    border-radius: 5%;
+    width: fit-content;
+}
+.info p{
+    margin-left: 3rem;
+    width: 70%;
+}
+/* Section 5 BANDA PRINCIPAL 2 */
+.sectionBandaPrincipal2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: var(--color-bg-60);
+    flex-wrap: wrap;
+}
+.sectionBandaPrincipal2 img{
+    height: 70%;
+    width: 35%;
+    border-radius: 1%;
+    transition: all ease-in-out .2s;
+    opacity: .8;
+    height: fit-content;
+}
+.sectionBandaPrincipal2 img:hover{
+    opacity: 1;
+    border: 6px solid rgba(300, 000, 000, 0.6);
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-bg-60);
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.col1Footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.col1Footer div{
+    display: flex;
+    gap: 15px;
+}
+.col1Footer i{
+    font-size: 2rem;
+}
+.colOthersFooter{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.colOthersFooter ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+.colOthersFooter span{
+    font-weight: 800;
+}
+.derechos{
+    display: flex;
+    justify-content: space-around;
+    border-top: 4px solid var(--color-buttons-details-20);
+    background-color: var(--color-bg-60);
+    padding: 2rem 0rem;
+    width: 100%;
+}
+.derechos div{
+    display: flex;
+    gap: 20px;
+}
+/* MEDIA QUERRY PARA TABLETS  */
+@media screen and (max-width: 1024px) {
+    nav ul{
+        flex-direction: column;
+        top: 12.5%;
+        right: -100%;
+        position: absolute;
+        background-color: rgba(300, 000, 000, 0.3);
+        padding: 1.5rem;
+        border-radius: 4%;
+        font-size: 2.5rem;
+        z-index: 2;
+    }
+    .registerButton{
+        border-left: none;
+        text-decoration: none;
+    }
+    .loginButton{
+        width: 80%;
+    }
+    #openMenu{
+        display: block;
+    }
+    .sectionBandaPrincipal2 img{
+        height: 40%;
+        width: 35%;
+    }
+}
+/* MEDIA QUERRY PARA CELULARES GRANDES */
+@media screen and (max-width: 768px) {
+    #openMenu{
+        font-size: 2.5rem;
+    }
+    .firstDiv{
+        font-size: .6rem;
+    }
+    .firstDiv h1{
+        font-size: 2rem;
+    }
+    .buttonCompra{
+        transform: scale(.8);
+    }
+    .secondDiv{
+        transform: scale(.9);
+    }
+    nav ul{
+        top: 16.5%;
+        right: -100%;
+        font-size: 1.8rem !important;
+    }
+    .containerArticles{
+        transform: scale(.8);
+    }
+    .sectionPasos{
+        font-size: 1rem;
+    }
+    .sectionBandaPrincipal h2{
+        font-size: 2rem;
+    }
+    .info{
+        transform: scale(.7);
+    }
+    .col1Footer,.colOthersFooter{
+        transform: scale(.8);
+    }
+    .tabcontent img{
+        height: 400px ;
+        width: 250px;
+    }
+    .col1{
+        transform: scale(.7);
+    }
+}
+/* MEDIA QUERRY PARA CELULARES MAS PEQUEÑOS */
+@media screen and (max-width: 426px) {
+    nav a img{
+        width: 6rem;
+    }
+    nav ul{
+        top: 12.6%;
+        right: -100%;
+        font-size: 1.6rem !important;
+    }
+    .firstDiv h1{
+        font-size: 1.5rem;
+    }
+    .buttonCompra{
+        transform: scale(.7);
+    }
+    .secondDiv{
+        transform: scale(.8);
+        background-position: 35%;
+    }
+    .containerArticles{
+        transform: scale(.6);
+    }
+    .sectionPasos{
+        font-size: .8rem;
+    }
+    .containerPasos{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .sectionPasos article i {
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+    .sectionBandaPrincipal2 img {
+        height: 35% !important;
+        width: 70% !important;
+    }
+    .col2{
+        width: auto;
+    }
+    .bandsOptions{
+        transform: scale(.8);
+    }
+    .sectionBandaPrincipal{
+        height: fit-content;
+    }
+}
