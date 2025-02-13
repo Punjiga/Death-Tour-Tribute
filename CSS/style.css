@@ -228,7 +228,15 @@ h2{
     width: 100%;
 }
 .bandsOptions button{
+    background: none;
+    color: var(--color-texts-10);
+    border: none;
     transform: scale(2);
+    transition: all ease-in-out .2s;
+}
+.bandsOptions button.active{
+    color: #969696;
+    border-bottom: 4px solid var(--color-buttons-details-20);
 }
 .tabcontent h3{
     font-size: 30px;
@@ -241,7 +249,7 @@ h2{
     gap: 30px;
 }
 .tabcontent {
-    animation: fadeEffect 1s;
+    animation: fadeEffect 2s;
 }
 @keyframes fadeEffect {
     from {opacity: 0;}
