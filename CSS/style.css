@@ -38,7 +38,6 @@ body, ul li, a{
     color: var(--color-texts-10);
     list-style: none;
     text-decoration: none;
-    overflow-x: hidden;
 }
 /* Header */
 header{
@@ -52,6 +51,8 @@ header{
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
+    overflow: hidden;
+    position: relative;
 }
 nav{
     display: flex;
@@ -382,7 +383,7 @@ footer{
 @media screen and (max-width: 1024px) {
     nav ul{
         flex-direction: column;
-        top: 12.5%;
+        top: 12.7%;
         right: -100%;
         position: absolute;
         background-color: rgba(300, 000, 000, 0.3);
